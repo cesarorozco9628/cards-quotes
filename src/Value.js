@@ -24,7 +24,7 @@ const Value = () => {
         setIncolor(PrintColor(inColor));
     }
     return(
-        <QuoteBox quote={Data.quotes[inValue].quote} author={Data.quotes[inValue].author} text='Next' color={Colors.colors[inColor].color} funcion={HandleValue}/>
+        <QuoteBox quote={Data.quotes[inValue].quote} author={Data.quotes[inValue].author} text='Next' color={Colors.colors[inColor].color} action={HandleValue}/>
     );
 } 
 
