@@ -16,7 +16,7 @@ const QuoteBox = ({quote, author, text, funcion, color}) => {
                     </div>
                     <p style={{color:color}}>{author}</p>
                     <div className='card-btn'>
-                        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false"><i className="fab fa-twitter" style={{color: color}}></i></a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" className="twitter-share-button" ><i className="fab fa-twitter" style={{color: color}}></i></a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                         <button onClick={funcion} style={{backgroundColor: color}}>{text}</button>
                     </div>
                 </div>

@@ -11,7 +11,7 @@ function Next (value) {
 }
 
 function PrintColor (element) {
-    element = Math.floor(Math.random()*(0-16)+16);
+    element = Math.floor(Math.random()*(0-17)+17);
     return element;
 }
 
@@ -19,12 +19,12 @@ const Value = () => {
     const [inValue, setInValue] = useState(0);
     const [inColor, setIncolor] = useState(0);
 
-    const Handlervovo = () => {
+    const HandleValue = () => {
         setInValue(Next(inValue));
         setIncolor(PrintColor(inColor));
     }
     return(
-        <QuoteBox quote={Data.quotes[inValue].quote} author={Data.quotes[inValue].author} text='Next' color={Colors.colors[inColor].color} funcion={Handlervovo}/>
+        <QuoteBox quote={Data.quotes[inValue].quote} author={Data.quotes[inValue].author} text='Next' color={Colors.colors[inColor].color} funcion={HandleValue}/>
     );
 } 
 
